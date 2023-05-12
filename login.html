@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Management System</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>UMS</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">User</a></li>
+                    <li><a href=""><img src="/portrait.png" alt="profile"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form">
+            <form action="" method="post">
+                <label for="username">Full Name</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+    
+    
+                <label for="idnumber">ID Number</label>
+                <input type="number" name="idnumber" id="idnumber" placeholder="ID Number" required>
+    
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Rwanda">Rwanda</option>
+                </select>
+    
+                <label for="languages">Languages</label>
+                <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="Kiswahili">Kiswahili</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="10">
+    
+                <button type="submit" name="login">Login</button>
+            </form>
+            <p>Don't have an account? <a href="">Register Here</a></p> 
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
